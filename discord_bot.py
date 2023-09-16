@@ -90,11 +90,6 @@ class DiscordBot:
             await self.__bot.process_commands(message)
 
         @self.__bot.command()
-        async def supbitch(ctx):
-            """Responds with a message for fun."""
-            await ctx.send(f'{ctx.author}, I hope you get aids')
-
-        @self.__bot.command()
         async def funfact(ctx):
             """Sends a random fun fact."""
             await ctx.send(randfacts.get_fact())
